@@ -1,0 +1,11 @@
+.middle{
+    text-align: center;
+    margin-top: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.top{
+    margin-top: 100px;
+}
+.last{
+    margin-bottom: 20px;
+}

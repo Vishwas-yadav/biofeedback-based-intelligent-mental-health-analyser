@@ -1,0 +1,22 @@
+
+<div class="childcomp">
+    <div class="container">
+      
+      <table class="table">
+        <th>
+          S.no
+        </th>
+        <th>Date</th>
+        <th>Score</th>
+        <th>Stress Level</th>
+        <tr *ngFor="let i of stat; let j=index" >
+          <td>{{j+1}}</td>
+          <td><b>{{i.date | date}}</b></td>
+      <td><b>{{i.testscore}}</b></td>
+      <td *ngIf="(i.testscore <= 57)">Low</td>
+      <td *ngIf="(i.testscore >= 58 && i.testscore <= 68)">Medium</td>
+      <td *ngIf="(i.testscore >= 69 && i.testscore <= 125)">High</td>
+        </tr>
+      </table>
+    </div>
+</div>

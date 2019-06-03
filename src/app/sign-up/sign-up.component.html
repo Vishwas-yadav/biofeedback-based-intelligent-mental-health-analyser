@@ -1,0 +1,54 @@
+<div  class="form-group formarea">
+  <h3 class="middle">Register</h3>
+  <form [formGroup]="rForm" class="form" (ngSubmit)="addPost(rForm.value)">
+    <div class="container">
+      <div class="row column">
+
+          <div class="container">
+              <b class="labels">Name</b>
+              <input type="email" formControlName="name" class="form-control labels" >
+              <div class="alert alert-danger labels" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">This is required !</div>
+            </div>
+
+
+        <div class="container">
+          <b class="labels">Email</b>
+          <input type="email" formControlName="email" class="form-control labels" >
+          <div class="alert alert-danger labels" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">This
+            should be in proper format!</div>
+        </div>
+
+
+        <div class="container">
+          <b class="labels">Password</b>
+          <input type="password" formControlName="password" class="form-control">
+          <div class="alert alert-danger labels" *ngIf="!rForm.controls['password'].valid && rForm.controls['password'].touched">This
+            should have min 5 characters!</div>
+        </div>
+        <div class="container">
+            <b class="labels">Age</b>
+            <input type="number" min="0" max="200" formControlName="age" class="form-control">
+            <div class="alert alert-danger labels" *ngIf="!rForm.controls['age'].valid && rForm.controls['age'].touched">This is required !</div>
+        </div>
+        <div class="container">
+              <b class="labels">Gender</b><br>
+              <input type="radio"  value="male" name="gender" formControlName="gender"> <i>Male</i><br>
+              <input type="radio" value="female" name="gender" formControlName="gender"><i>Female</i>
+        </div>
+        <div class="container">
+                <b class="labels">Birth Place</b>
+                <input type="text" formControlName="place" class="form-control">
+                <div class="alert alert-danger labels" *ngIf="!rForm.controls['place'].valid && rForm.controls['place'].touched">This is required !</div>
+        </div>
+        
+<div class="subres">
+    <input type="submit" class="btn btn-success sub" value="Register" [disabled]="!rForm.valid" [class.disablepointer]="!rForm.valid" >
+</div>
+        
+      </div>
+
+    </div>
+
+  </form>
+</div> 
+

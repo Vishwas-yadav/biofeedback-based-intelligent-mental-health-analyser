@@ -1,0 +1,664 @@
+
+<div class="container childcomp">
+  <div class="textcentre">
+      <b>
+          Please Answer The Following Questions Honestly !
+      </b>
+  </div>
+  <div class="question">
+
+    <form [formGroup]="rForm" class="form" (ngSubmit)="addPost(rForm.value)">
+        <div class="container">
+            <b class="labels">1. Have you been a very nervous person?</b><br>
+            <div class="row">
+              <div class="col-md-2">
+            <input type="radio"  value="never"  formControlName="q1"> <i>Never</i><br>
+              </div>
+              <div class="col-md-2">
+            <input type="radio"  value="low"  formControlName="q1"> <i>Sometimes</i><br>
+
+              </div>
+              <div class="col-md-2">
+            <input type="radio"  value="medium"  formControlName="q1"> <i>Moderate</i><br>
+
+              </div>
+              <div class="col-md-2">
+            <input type="radio"  value="high"  formControlName="q1"> <i>Mostly</i><br>
+
+              </div>
+              <div class="col-md-2">
+            <input type="radio"  value="always"  formControlName="q1"> <i>Always</i><br>
+
+              </div>
+
+            </div>
+      </div>
+      <div class="container">
+        <b class="labels">2. Compared to one year ago, how would you rate your health in general now?</b><br>
+        <div class="row">
+          <div class="col-md-2">
+        <input type="radio"  value="never"  formControlName="q3"> <i>Much better</i><br>
+          </div>
+          <div class="col-md-2">
+        <input type="radio"  value="low"  formControlName="q3"> <i>better</i><br>
+
+          </div>
+          <div class="col-md-2">
+        <input type="radio"  value="medium"  formControlName="q3"> <i>Same</i><br>
+
+          </div>
+          <div class="col-md-2">
+        <input type="radio"  value="high"  formControlName="q3"> <i>worse</i><br>
+
+          </div>
+          <div class="col-md-2">
+        <input type="radio"  value="always"  formControlName="q3"> <i>Much worse </i><br>
+
+          </div>
+
+        </div>
+  </div>
+      <div class="container">
+          <b class="labels">3. In general, would you say your health</b><br>
+          <div class="row">
+            <div class="col-md-2">
+          <input type="radio"  value="never"  formControlName="q2"> <i>Excellent</i><br>
+            </div>
+            <div class="col-md-2">
+          <input type="radio"  value="low"  formControlName="q2"> <i>Very Good</i><br>
+
+            </div>
+            <div class="col-md-2">
+          <input type="radio"  value="medium"  formControlName="q2"> <i>Good</i><br>
+
+            </div>
+            <div class="col-md-2">
+          <input type="radio"  value="high"  formControlName="q2"> <i>Fair</i><br>
+
+            </div>
+            <div class="col-md-2">
+          <input type="radio"  value="always"  formControlName="q2"> <i>Poor</i><br>
+
+            </div>
+
+          </div>
+    </div>
+    
+  <div class="container">
+      <b class="labels">4. Have you felt so down in the dumps that nothing could cheer you up?</b><br>
+      <div class="row">
+        <div class="col-md-2">
+      <input type="radio"  value="never"  formControlName="q4"> <i>Never</i><br>
+        </div>
+        <div class="col-md-2">
+      <input type="radio"  value="low"  formControlName="q4"> <i>Sometimes</i><br>
+
+        </div>
+        <div class="col-md-2">
+      <input type="radio"  value="medium"  formControlName="q4"> <i>Moderate</i><br>
+
+        </div>
+        <div class="col-md-2">
+      <input type="radio"  value="high"  formControlName="q4"> <i>Mostly</i><br>
+
+        </div>
+        <div class="col-md-2">
+      <input type="radio"  value="always"  formControlName="q4"> <i>Always</i><br>
+
+        </div>
+
+      </div>
+</div>
+<div class="container">
+    <b class="labels">5. Did you feel full of pep?</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q5"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q5"> <i>Sometimes</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q5"> <i>Moderate</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q5"> <i>Mostly</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q5"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+<div class="container">
+    <b class="labels">6. Have you felt calm and peaceful?</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q6"> <i>Always</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q6"> <i>Mostly</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q6"> <i>Moderate</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q6"> <i>Sometimes</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q6"> <i>Never</i><br>
+
+      </div>
+
+    </div>
+</div>
+<div class="container">
+    <b class="labels">7. Did you have a lot of energy?</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q7"> <i>Always</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q7"> <i>Mostly</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q7"> <i>Moderate</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q7"> <i>Sometimes</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q7"> <i>Never</i><br>
+
+      </div>
+
+    </div>
+</div>
+<div class="container">
+    <b class="labels">8. Have you felt downhearted and blue?</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q8"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q8"> <i>Sometimes</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q8"> <i>Moderate</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q8"> <i>Mostly</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q8"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+<div class="container">
+    <b class="labels">9. Did you feel worn out?</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q9"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q9"> <i>Sometimes</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q9"> <i>Moderate</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q9"> <i>Mostly</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q9"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">10.Did you feel tired?</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q10"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q10"> <i>Sometimes</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q10"> <i>Moderate</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q10"> <i>Mostly</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q10"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">11. During the past 4 weeks, how much of the time has your physical health or emotional problems interfered with your social activities (like visiting with friends, relatives, etc.)?</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q11"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q11"> <i>Sometimes</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q11"> <i>Moderate</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q11"> <i>Mostly</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q11"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">12. I seem to get sick a little easier than other people</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q12"> <i>Definitely true</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q12"> <i>Mostly true</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q12"> <i>Moderate</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q12"> <i>Mostly</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q12"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">13.I am as healthy as anybody I know</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q13"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q13"> <i>Low</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q13"> <i>Medium</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q13"> <i>High</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q13"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">14. I expect my health to get worse</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q14"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q14"> <i>Low</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q14"> <i>Medium</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q14"> <i>High</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q14"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">15.My health is excellent</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q15"> <i>Definitely true</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q15"> <i>Mostly true</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q15"> <i>Don't know</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q15"> <i>Mostly false</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q15"> <i>Definitely false</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">16. How much bodily pain have you had during the past 4 weeks?</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q16"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q16"> <i>Low</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q16"> <i>Medium</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q16"> <i>High</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q16"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">17. During the past 4 weeks, how much did pain interfere with your normal work (including both work outside the home and housework)?</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q17"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q17"> <i>Low</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q17"> <i>Medium</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q17"> <i>High</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q17"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">18. Emotional problems interfered with your normal social activities with family, friends, neighbors, or groups?</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q18"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q18"> <i>Low</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q18"> <i>Medium</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q18"> <i>High</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q18"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">19. Didn't do work or other activities as carefully as usual</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q19"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q19"> <i>Low</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q19"> <i>Medium</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q19"> <i>High</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q19"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">20. Accomplished less than you would like</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q20"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q20"> <i>Low</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q20"> <i>Medium</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q20"> <i>High</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q20"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">21. Cut down the amount of time you spent on work or other activities</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q21"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q21"> <i>Low</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q21"> <i>Medium</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q21"> <i>High</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q21"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">22. Vigorous activities, such as running, lifting heavy objects, participating in strenuous sports</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q22"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q22"> <i>Low</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q22"> <i>Medium</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q22"> <i>High</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q22"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">23. Moderate activities, such as moving a table, pushing a vacuum cleaner, bowling, or playing golf makes tired?</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q23"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q23"> <i>Low</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q23"> <i>Medium</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q23"> <i>High</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q23"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">24. Lack time to read the daily newspaper and magazines</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q24"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q24"> <i>Low</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q24"> <i>Medium</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q24"> <i>High</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q24"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <b class="labels">25. Have you been a happy person ?</b><br>
+    <div class="row">
+      <div class="col-md-2">
+    <input type="radio"  value="never"  formControlName="q25"> <i>Never</i><br>
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="low"  formControlName="q25"> <i>Low</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="medium"  formControlName="q25"> <i>Medium</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="high"  formControlName="q25"> <i>High</i><br>
+
+      </div>
+      <div class="col-md-2">
+    <input type="radio"  value="always"  formControlName="q25"> <i>Always</i><br>
+
+      </div>
+
+    </div>
+</div>
+
+
+        <div class="subres">
+            <input type="submit" class="btn btn-success sub" value="Submit" [disabled]="!rForm.valid" [class.disablepointer]="!rForm.valid" >
+        </div>
+    </form>
+    <!-- <div>
+      <i>1. I worry a lot ?</i>
+    </div> -->
+  </div>
+
+</div>

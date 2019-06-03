@@ -1,0 +1,26 @@
+.childcomp{
+    margin-top: 100px;
+}
+.textcentre{
+    text-align: center;
+}
+.question{
+    border: 1px solid #2695A5;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px;
+    margin-bottom: 200px;
+}
+.subres{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sub{
+  margin-top: 20px;
+}
+.disablepointer{
+    cursor:not-allowed;
+}

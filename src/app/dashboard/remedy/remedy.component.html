@@ -1,0 +1,26 @@
+
+<div class="container childcomp">
+  <b *ngIf="datacoming.testscore<=57">
+    Stress occurs when we think apprehensively therefore stress is caused by anxious behaviour and the way we think and act and not by a biological, chemical or genetic problem.
+    Everyone is anxious time to time. This is normal stress becomes a problem when it interferes with normal lifestyle.
+    Since your stress level is low, you are doing a great job of management life's challenge in healthy ways. KEEP IT UP!
+  </b>
+  <div *ngIf="(datacoming.testscore >= 58 && datacoming.testscore <= 68)">
+  <b>This range is associated with the start of problems with stress.People score in this range were facing more challenging situations and circumstances.
+    It indicates that there is potential to experience problems with stress if your stress behaviours aren't addressed,so to take it to low level you must follow some remedies ther are:
+
+  </b>
+  <p> 1.You must do Yoga and Meditation. It will help you to focus and take your mind off your stress.</p>
+  <p> 2.You can imagine a place that makes you feel at peace.</p>
+  <p>3.Spend atleast 30 minutes and almost 1 hour to do what you enjoy.</p>
+  <p>4.Avoid negative thinking and count your blessings. Say something positive to yourself as soon as you wake up. </p>
+  <p>5.Make to-do list.</p>
+  <p>6.Stop worrying about the things you can not change.</p>
+  
+</div>
+  <div *ngIf="(datacoming.testscore >= 69 && datacoming.testscore <= 125)">
+    <p>Stress is not caused by chemical imbalance in brain, a biological problem or by genes,it is cause by behaviour,which we can change.</p>
+    <p>Stress of this level can cause some lifestyle impairement and could easily become an even larger problem if your anxious behaviour aren't addressed. Good self help information can be helpfil.</p>
+    <p>Stress at this level generally requires working with an experienced anxiety disorder therapist, coach, counseller as issues that cause this level of stress are often deep seated,which requires proffessionals to identify and successfully address.It is most effective way to overcome stress disorder.</p>
+  </div>
+</div>
